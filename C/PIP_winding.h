@@ -23,4 +23,7 @@ typedef struct
     int8_t winding_cnt;
     bool inside; //0: outside, 1: inside
 }pip_result_s;
+
+bool check_WGS84_point_valid(ll_point_i32_s target);
+bool PIP_check_polygon_is_valid_WGS84(polygon_fence_s target);
 #endif
